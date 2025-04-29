@@ -1,9 +1,14 @@
 # mastering-XSS-attacks
+
 A TryHackMe room for mastering Cross-Site Scripting (XSS) vulnerabilities with hands-on tasks including Reflected, Stored, and DOM-Based XSS in a simulated blog environment.
 Reflected XSS Challenge Write-Up
+
 Introduction
+
 Welcome to the Reflected XSS challenge in the "Mastering Cross-Site Scripting (XSS) Attacks" TryHackMe room! This practical challenge introduces you to Reflected Cross-Site Scripting (XSS), a common web vulnerability where attackers inject malicious scripts into a web page that are executed in a victim’s browser. Your task is to identify and exploit a Reflected XSS vulnerability in a simulated blog application’s search feature to capture a hidden flag, learning the risks and mechanics of XSS along the way. In this lab, the search feature fails to sanitize user input, allowing script injection directly into the HTML context.
+
 Challenge Setup
+
 The challenge provides a web page (search.html) with a search functionality that takes a q parameter from the URL (e.g., file:///path/to/search.html?q=books). The application reflects the user’s input directly into the page without proper sanitization, resulting in a Reflected XSS vulnerability. When a search query is submitted, the input appears in the HTML response, making it possible to inject and execute JavaScript code. Your goal is to exploit this vulnerability to retrieve the hidden flag, THM{XSS_REFLECTED}.
 Objective
 
@@ -36,6 +41,7 @@ After injecting the payload <script>alert('THM{XSS_REFLECTED}')</script>, the al
 THM{XSS_REFLECTED}
 
 Remediation
+
 To prevent Reflected XSS vulnerabilities in real-world applications, implement the following strategies:
 
 Input Validation: Sanitize user input by rejecting or escaping special characters like <, >, &, and ".
@@ -44,10 +50,13 @@ Content Security Policy (CSP): Use CSP headers to restrict script execution, e.g
 Secure Frameworks: Leverage frameworks like React or Angular, which automatically sanitize inputs and outputs to mitigate XSS risks.
 
 Conclusion
+
 This challenge demonstrates the dangers of Reflected XSS, where unsanitized user input in a search feature allows attackers to execute malicious scripts in a victim’s browser. By exploiting the vulnerability, you retrieved the flag THM{XSS_REFLECTED} and learned how attackers can use XSS for malicious purposes like cookie theft or phishing. Implementing robust input validation, output encoding, and security headers like CSP is critical to securing web applications against XSS attacks. Great job completing this challenge and advancing your web security skills!
+
 References
 
 OWASP XSS Prevention Cheat Sheet
 Mozilla Developer Network (MDN) - Cross-Site Scripting (XSS)
 TryHackMe - Mastering Cross-Site Scripting (XSS) Attacks
 
+Try hack me room link: https://tryhackme.com/jr/masteringcrosssitescriptingV2
