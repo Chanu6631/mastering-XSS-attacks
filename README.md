@@ -1,4 +1,4 @@
-# mastering-XSS-attacks
+# Mastering-XSS-attacks
 
 A TryHackMe room for mastering Cross-Site Scripting (XSS) vulnerabilities with hands-on tasks including Reflected, Stored, and DOM-Based XSS in a simulated blog environment.
 Reflected XSS Challenge Write-Up
@@ -55,8 +55,8 @@ This challenge demonstrates the dangers of Reflected XSS, where unsanitized user
 
 References
 
-OWASP XSS Prevention Cheat Sheet
-Mozilla Developer Network (MDN) - Cross-Site Scripting (XSS)
-TryHackMe - Mastering Cross-Site Scripting (XSS) Attacks
+-OWASP XSS Prevention Cheat Sheet
+-Mozilla Developer Network (MDN) - Cross-Site Scripting (XSS)
+-TryHackMe - Mastering Cross-Site Scripting (XSS) Attacks
 
 Try hack me room link: https://tryhackme.com/jr/masteringcrosssitescriptingV2
